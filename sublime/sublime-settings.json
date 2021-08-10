@@ -1,0 +1,21 @@
+{
+    "binary_file_patterns":
+    [
+        "*.elf",
+        "*.bin"
+    ],
+    "color_scheme": "Packages/Color Scheme - Default/Monokai.sublime-color-scheme",
+    "default_line_ending": "unix",
+    "file_exclude_patterns":
+    [
+        "*.bin",
+        "*.map"
+    ],
+    "font_size": 12,
+    "ignored_packages":
+    [],
+    "theme": "Adaptive.sublime-theme",
+    "translate_tabs_to_spaces": true,
+    "dark_theme": "Default.sublime-theme",
+    "light_theme": "Default Dark.sublime-theme",
+}

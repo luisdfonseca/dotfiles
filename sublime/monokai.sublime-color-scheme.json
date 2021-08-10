@@ -1,0 +1,15 @@
+{
+    "variables":
+    {
+    },
+    "globals":
+    {
+        "background": "#1a1e24",
+        "foreground": "var(white3)",
+        
+    },
+    "rules":
+    [
+        
+    ]
+}
