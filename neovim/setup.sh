@@ -24,4 +24,4 @@ source ~/.bashrc
 nvim --version
 
 mkdir -p ~/.config/nvim
-cp ~/dotfiles/neovim/init.lua ~/.config/nvim
+cp /dotfiles/neovim/init.lua ~/.config/nvim
