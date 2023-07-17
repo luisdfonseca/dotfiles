@@ -14,7 +14,7 @@ docker run -it -v $(pwd):/workspace \
     -v /var/run/docker.sock:/var/run/docker.sock \
     -e GIT_USER_NAME="" \
     -e GIT_USER_EMAIL="" \
-    -e GH_KEY=""          \
+    -e GH_TOKEN=""        \
     --name my-ide ide
 
 # Notes
