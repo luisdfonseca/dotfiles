@@ -26,6 +26,10 @@ git config --global user.email "$GIT_USER_EMAIL"
 
 Used after using github personal access tokens [using personal access token on CLI](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#using-a-personal-access-token-on-the-command-line)
 
+```
+git config --global credential.helper cache
+```
+
 ## GitHub CLI
 
 [https://github.com/cli/cli](https://github.com/cli/cli)
