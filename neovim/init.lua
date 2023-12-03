@@ -75,7 +75,7 @@ require('lazy').setup({
 
   -- Detect tabstop and shiftwidth automatically
   'tpope/vim-sleuth',
-
+  
   -- LDF plugins
   {
       "nvim-tree/nvim-tree.lua",
@@ -85,7 +85,7 @@ require('lazy').setup({
      "nvim-tree/nvim-web-devicons",
      }
   },
-
+  
   -- NOTE: This is where your plugins related to LSP can be installed.
   --  The configuration is done below. Search for lspconfig to find it below.
   {
@@ -247,6 +247,10 @@ require('lazy').setup({
 -- NOTE: You can change these options as you wish!
 
 -- LDF
+--
+-- use system clipboard by default
+vim.opt.clipboard:append("unnamedplus")
+
 -- disable netrw at the very start of your init.lua (strongly advised)
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
@@ -313,6 +317,7 @@ vim.o.termguicolors = true
 
 vim.api.nvim_set_keymap('n', '<leader>k', ':NvimTreeToggle<CR>', {noremap = true, silent = true})
 vim.api.nvim_set_keymap('n', '<C-t>', ':tabnew<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<leader>n', ':tabnext<CR>', { noremap = true, silent = true })
 
 
 -- LDF END
