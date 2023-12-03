@@ -13,7 +13,6 @@ cd /your_projects/
 docker run -it -v $(pwd):/workspace \
     -v /var/run/docker.sock:/var/run/docker.sock \
     -p 8080:8080    \         
-    -e GH_TOKEN=""  \
     --name my-ide ide
 
 # Notes
