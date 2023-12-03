@@ -76,6 +76,16 @@ require('lazy').setup({
   -- Detect tabstop and shiftwidth automatically
   'tpope/vim-sleuth',
 
+  -- LDF plugins
+  {
+      "nvim-tree/nvim-tree.lua",
+      version = "*",
+      lazy = false,
+      dependencies = {
+     "nvim-tree/nvim-web-devicons",
+     }
+  },
+
   -- NOTE: This is where your plugins related to LSP can be installed.
   --  The configuration is done below. Search for lspconfig to find it below.
   {
@@ -236,6 +246,29 @@ require('lazy').setup({
 -- See `:help vim.o`
 -- NOTE: You can change these options as you wish!
 
+-- LDF
+-- disable netrw at the very start of your init.lua (strongly advised)
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1
+
+-- set termguicolors to enable highlight groups
+vim.opt.termguicolors = true
+
+-- empty setup using defaults
+require'nvim-web-devicons'.setup({})
+require("nvim-tree").setup({
+tab = {
+        sync = {
+          open = true,
+          close = true,
+          ignore = {},
+        },
+      },
+
+})
+
+-- LDF END
+
 -- Set highlight on search
 vim.o.hlsearch = false
 
@@ -274,6 +307,15 @@ vim.o.completeopt = 'menuone,noselect'
 vim.o.termguicolors = true
 
 -- [[ Basic Keymaps ]]
+--
+--
+-- LDF
+
+vim.api.nvim_set_keymap('n', '<leader>k', ':NvimTreeToggle<CR>', {noremap = true, silent = true})
+vim.api.nvim_set_keymap('n', '<C-t>', ':tabnew<CR>', { noremap = true, silent = true })
+
+
+-- LDF END
 
 -- Keymaps for better default experience
 -- See `:help vim.keymap.set()`
