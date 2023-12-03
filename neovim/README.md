@@ -4,8 +4,8 @@
 - [Lazy](https://www.lazyvim.org/)
 - [Telescope](https://github.com/nvim-telescope/telescope.nvim)
 - [Mason](https://github.com/williamboman/mason.nvim)
+- [nvim-tree](https://github.com/nvim-tree/nvim-tree.lua)
 - [https://github.com/luisdfonseca/kickstart.nvim/blob/master/init.lua](https://github.com/luisdfonseca/kickstart.nvim/blob/master/init.lua)
-
 
 ### Resources
 
