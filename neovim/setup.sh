@@ -3,7 +3,7 @@
 # Install necessary dependencies
 sudo apt-get update
 sudo apt-get install -y \
-    ninja-build gettext libtool libtool-bin autoconf automake cmake g++ pkg-config unzip curl
+    ninja-build gettext libtool libtool-bin autoconf automake cmake g++ pkg-config unzip curl ripgrep
 
 # Clone neovim repository from GitHub
 mkdir ~/neovim
