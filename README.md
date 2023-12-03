@@ -29,7 +29,7 @@ if behind a proxy:
 ### Restarting Container
 docker ps -a
 
-docker container a54a617919fd start
+docker container start a54a617919fd
 
 docker exec -it my-ide bash
 ```
