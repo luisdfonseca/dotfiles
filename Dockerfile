@@ -1,6 +1,6 @@
 FROM ubuntu:latest
 
-RUN apt-get update && apt-get install -y sudo vim git curl 
+RUN apt-get update && apt-get install -y sudo vim git curl tmux
 
 ENV DEBIAN_FRONTEND noninteractive
 ENV TZ=America/Los_Angeles
