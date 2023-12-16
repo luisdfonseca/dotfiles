@@ -64,6 +64,9 @@ tmux ls
 
 - If you already have two panes and want to move one to a new window, you can "break" the pane. Press Ctrl+b followed by !. This will convert the current pane into a new window.
 
-** Enter Copy Mode**: You can do this by pressing Ctrl-b followed by [.
+** Expanding a pane **:
+- Once you're in the desired pane, you can zoom into it by pressing Ctrl-b and then z. This will make the selected pane temporarily expand to fill the entire tmux window, hiding the other panes. Do Ctrl-b and then z to reverse it. 
 
-** Navigate the History**: First, you need to enter the copy mode in tmux. you can use the arrow keys (Up, Down, Left, Right) to navigate through the history. Alternatively, you can also use Page Up and Page Down to scroll faster.
+** Enter Copy Mode **: You can do this by pressing Ctrl-b followed by [.
+
+** Navigate the History **: First, you need to enter the copy mode in tmux. you can use the arrow keys (Up, Down, Left, Right) to navigate through the history. Alternatively, you can also use Page Up and Page Down to scroll faster.
