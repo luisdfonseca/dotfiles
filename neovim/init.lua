@@ -261,14 +261,16 @@ vim.opt.termguicolors = true
 -- empty setup using defaults
 require'nvim-web-devicons'.setup({})
 require("nvim-tree").setup({
-tab = {
-        sync = {
-          open = true,
-          close = true,
-          ignore = {},
-        },
-      },
-
+  tab = {
+    sync = {
+      open = true,
+      close = true,
+      ignore = {},
+    },
+  },
+  filters = {
+    dotfiles = false,
+  },
 })
 
 -- LDF END
@@ -653,3 +655,4 @@ cmp.setup {
 
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
+
