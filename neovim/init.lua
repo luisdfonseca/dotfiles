@@ -77,6 +77,20 @@ require('lazy').setup({
   'tpope/vim-sleuth',
   
   -- LDF plugins
+  --
+
+  -- "gc" to comment visual regions/lines
+  { 'numToStr/Comment.nvim', opts = {} },
+
+  -- nvim-comment plugin
+  { 
+    'terrortylor/nvim-comment',
+    config = function()
+      require('nvim_comment').setup()
+    end,
+  },
+  
+  -- nvim-tree
   {
       "nvim-tree/nvim-tree.lua",
       version = "*",
@@ -250,6 +264,9 @@ require('lazy').setup({
 --
 -- use system clipboard by default
 vim.opt.clipboard:append("unnamedplus")
+
+
+require('nvim_comment').setup()
 
 -- disable netrw at the very start of your init.lua (strongly advised)
 vim.g.loaded_netrw = 1
