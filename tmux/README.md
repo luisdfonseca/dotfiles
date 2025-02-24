@@ -70,3 +70,100 @@ tmux ls
 **Enter Copy Mode**: You can do this by pressing Ctrl-b followed by [.
 
 **Navigate the History**: First, you need to enter the copy mode in tmux. you can use the arrow keys (Up, Down, Left, Right) to navigate through the history. Alternatively, you can also use Page Up and Page Down to scroll faster.
+
+
+
+
+-----------------
+
+
+### **Most Used `tmux` Commands (Including Your Custom Bindings)**
+Here’s a list of the most commonly used `tmux` commands, **highlighting your custom bindings** from your configuration.
+
+---
+
+## **1️⃣ General `tmux` Commands**
+| Command | Description |
+|---------|------------|
+| `tmux` | Start a new `tmux` session. |
+| `tmux new -s <session-name>` | Start a new `tmux` session with a specific name. |
+| `tmux attach -t <session-name>` | Attach to an existing session. |
+| `tmux list-sessions` | List all active `tmux` sessions. |
+| `tmux kill-session -t <session-name>` | Kill a specific session. |
+| `tmux kill-server` | Kill all `tmux` sessions. |
+
+---
+
+## **2️⃣ Prefix Key (Modified in Your Config)**
+| Command | Description |
+|---------|------------|
+| **`Ctrl+a`** | **(Your Custom Prefix Key)** Used to enter `tmux` command mode (default was `Ctrl+b`). |
+| `Ctrl+a d` | Detach from the current session. |
+| `Ctrl+a r` | **(Custom Binding)** Reload `~/.tmux.conf`. |
+| `Ctrl+a I` | Install/update `tmux` plugins using TPM. |
+
+---
+
+## **3️⃣ Window Management**
+| Command | Description |
+|---------|------------|
+| `Ctrl+a c` | Create a new window. |
+| `Ctrl+a &` | Close the current window. |
+| `Ctrl+a w` | List all windows. |
+| `Ctrl+a n` | Switch to the next window. |
+| `Ctrl+a p` | Switch to the previous window. |
+| `Ctrl+a <number>` | Switch to a specific window (e.g., `Ctrl+a 1` for window 1). |
+
+---
+
+## **4️⃣ Pane Management (Custom Shortcuts in Bold)**
+| Command | Description |
+|---------|------------|
+| **`Ctrl+a |`** | **(Custom)** Split window **horizontally** (side by side). |
+| **`Ctrl+a -`** | **(Custom)** Split window **vertically** (stacked). |
+| `Ctrl+a x` | Close the current pane. |
+| `Ctrl+a o` | Switch between panes. |
+| **`Alt + ←/→/↑/↓`** | **(Custom)** Navigate panes using `Alt + Arrow keys`. |
+| **`Ctrl+a h/j/k/l`** | **(Custom)** Resize panes left/down/up/right. |
+
+---
+
+## **5️⃣ Copy & Paste (Clipboard and Vi Mode)**
+| Command | Description |
+|---------|------------|
+| `Ctrl+a [` | Enter **copy mode** (for scrolling or copying text). |
+| `Space` | Start selecting text (if using Vi mode). |
+| `Enter` | Copy selected text. |
+| `Ctrl+a ]` | Paste copied text. |
+
+---
+
+## **6️⃣ Session & Persistence (Using Your Plugins)**
+| Command | Description |
+|---------|------------|
+| `tmux-resurrect` | Saves/restores sessions automatically. |
+| `tmux-continuum` | Auto-saves every few minutes and restores on reboot. |
+
+---
+
+## **7️⃣ Status Bar & Battery Plugin**
+| Command | Description |
+|---------|------------|
+| `tmux-battery` | Shows battery percentage in the status bar. |
+| `tmux-prefix-highlight` | Shows when the prefix key (`Ctrl+a`) is active. |
+
+---
+
+### **Summary of Your Custom Keybindings**
+| Keybinding | Action |
+|------------|--------|
+| **`Ctrl+a |`** | Split pane **horizontally** (instead of `Ctrl+a %`). |
+| **`Ctrl+a -`** | Split pane **vertically** (instead of `Ctrl+a "`). |
+| **`Ctrl+a r`** | Reload `~/.tmux.conf`. |
+| **`Alt + Arrow Keys`** | Move between panes. |
+| **`Ctrl+a h/j/k/l`** | Resize panes. |
+| **`Ctrl+a I`** | Install `tmux` plugins (TPM). |
+
+---
+
+This list includes **all essential `tmux` commands** while **highlighting the custom bindings from your configuration**. Let me know if you need any modifications! 🚀
